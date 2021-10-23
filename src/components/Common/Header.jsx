@@ -2,11 +2,19 @@ import { useEffect, useState } from "react";
 import Navigation from "../Common/Navigation";
 import { NavLink } from "react-router-dom";
 import logo from "./../../images/logo-light.png";
+import { useTranslation } from "react-i18next";
 
 var bnr = require("./../../images/background/bg-5.png");
 
+const lngs = {
+  am: { nativeName: "Հայերեն" },
+  ru: { nativeName: "Русский" },
+};
+
 export default function Header() {
   const [isQuoteActive, setIsQuoteActive] = useState(false);
+
+  const { t, i18n } = useTranslation();
 
   const handleQuoteToggle = () => {
     setIsQuoteActive(!isQuoteActive);
@@ -91,8 +99,8 @@ export default function Header() {
                           <i className="fa fa-phone" />
                         </div>
                         <div className="icon-content">
-                          <h5 className="m-t0 font-weight-500">Phone number</h5>
-                          <p>(075) 123-7654</p>
+                          <h5 className="m-t0 font-weight-500">{t("phone")}</h5>
+                          <p>{t("phone_text")}</p>
                         </div>
                       </div>
                       <div className="mt-icon-box-wraper center p-b30">
@@ -100,10 +108,8 @@ export default function Header() {
                           <i className="fa fa-envelope" />
                         </div>
                         <div className="icon-content">
-                          <h5 className="m-t0 font-weight-500">
-                            Email address
-                          </h5>
-                          <p>7xthemehelp@gmail.com</p>
+                          <h5 className="m-t0 font-weight-500">{t("email")}</h5>
+                          <p>{t("email_text")}</p>
                         </div>
                       </div>
                       <div className="mt-icon-box-wraper center p-b30">
@@ -111,14 +117,12 @@ export default function Header() {
                           <i className="fa fa-map-marker" />
                         </div>
                         <div className="icon-content">
-                          <h5 className="m-t0 font-weight-500">Address info</h5>
-                          <p>201 Liverpool Street, Suite 721, London</p>
+                          <h5 className="m-t0 font-weight-500">
+                            {t("address")}
+                          </h5>
+                          <p>{t("address_text")}</p>
                         </div>
                       </div>
-                    </div>
-
-                    <div className="text-center">
-                      <h4 className="font-weight-600">© 2021 7xtheme</h4>
                     </div>
                   </div>
                 </div>
