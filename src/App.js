@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Components from "./components/Components";
 import ScrolToTop from "./components/Elements/ScrolToTop";
 import Loader from "./components/Elements/Loader";
@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 import "./i18n";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -27,7 +28,9 @@ const App = () => {
         ...am,
       });
 
-      // setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
     })();
   }, []);
 
@@ -35,7 +38,7 @@ const App = () => {
     <div className="App">
       <Components />
       <ScrolToTop />
-      <Loader />
+      {loading && <Loader />}
     </div>
   );
 };

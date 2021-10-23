@@ -13,29 +13,25 @@ import WhyChooseUs from "./../Elements/WhyChooseUs";
 // import Blogs from "./../Elements/Blogs2";
 // import Testimonials from "./../Elements/Testimonials";
 
-class Home extends React.Component {
-  render() {
-    return (
-      <>
-        <Header />
-        <div className="page-content">
-          <Slider />
-          <About />
-          {/* <Specialization /> */}
-          {/* <OurValue />
-          <OurMission /> */}
-          <OurServices />
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <div className="page-content">
+        <Slider />
+        <About />
+        {/* <Specialization /> */}
+        {/* <OurValue />
+      <OurMission /> */}
+        <OurServices />
 
-          <Callus />
-          <WhyChooseUs />
-          {/* <OurProject /> */}
-          {/* <Blogs /> */}
-          {/* <Testimonials /> */}
-        </div>
-        <Footer />
-      </>
-    );
-  }
+        <Callus />
+        <WhyChooseUs />
+        {/* <OurProject /> */}
+        {/* <Blogs /> */}
+        {/* <Testimonials /> */}
+      </div>
+      <Footer />
+    </>
+  );
 }
-
-export default Home;
