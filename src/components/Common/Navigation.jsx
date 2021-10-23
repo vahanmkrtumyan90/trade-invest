@@ -41,6 +41,17 @@ class Navigation extends React.Component {
             <li>
               <NavLink to={"/contactus"}>Contact us</NavLink>
             </li>
+            <li>
+              <NavLink to={""}>Post detail</NavLink>
+              <ul className="sub-menu">
+                <li>
+                  <NavLink to={"/post-image"}>Հայերեն</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/post-gallery"}>Русский</NavLink>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </>
