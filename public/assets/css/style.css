@@ -8550,13 +8550,40 @@ HEADER (top part of page)
   transition: all 0.2s linear;
 }
 
+.header-nav .nav > li .sub-menu li p {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  padding: 14px 20px;
+  font-weight: 400;
+  border-left: 0px solid transparent;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
 .header-nav .nav > li .sub-menu li a:hover {
   color: #000;
   text-decoration: none;
   border-left: 10px solid #f5bf23;
 }
 
+.header-nav .nav > li .sub-menu li p:hover {
+  color: #000;
+  text-decoration: none;
+  border-left: 10px solid #f5bf23;
+}
+
 .header-nav .nav > li .sub-menu li a:hover:after {
+  width: 4px;
+  left: -1px;
+}
+
+.header-nav .nav > li .sub-menu li p:hover:after {
   width: 4px;
   left: -1px;
 }

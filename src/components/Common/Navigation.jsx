@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function Navigation(props) {
@@ -51,10 +51,10 @@ export default function Navigation(props) {
             </NavLink>
             <ul className="sub-menu">
               <li onClick={() => i18n.changeLanguage("am")}>
-                <NavLink to={""}>Հայերեն</NavLink>
+                <p to={""}>Հայերեն</p>
               </li>
               <li onClick={() => i18n.changeLanguage("ru")}>
-                <NavLink to={""}>Русский</NavLink>
+                <p to={""}>Русский</p>
               </li>
             </ul>
           </li>

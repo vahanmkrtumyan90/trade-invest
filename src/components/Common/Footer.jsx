@@ -30,7 +30,7 @@ export default function Footer() {
               {/* RESENT POST */}
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="widget widget_address_outer">
-                  <h4 className="widget-title">Contact Us</h4>
+                  <h4 className="widget-title">{t("contactus")}</h4>
                   <ul className="widget_address">
                     <li>{t("address_text")}</li>
                     <li>{t("email_text")}</li>
@@ -41,7 +41,7 @@ export default function Footer() {
               {/* USEFUL LINKS */}
               <div className="col-lg-4 col-md-6 col-sm-6 footer-col-4">
                 <div className="widget widget_services inline-links">
-                  <h4 className="widget-title">Useful links</h4>
+                  <h4 className="widget-title">{t("useful")}</h4>
                   <ul>
                     <li>
                       <NavHashLink to="/#about">{t("about")}</NavHashLink>
