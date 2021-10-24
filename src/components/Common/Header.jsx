@@ -14,7 +14,7 @@ const lngs = {
 export default function Header() {
   const [isQuoteActive, setIsQuoteActive] = useState(false);
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const handleQuoteToggle = () => {
     setIsQuoteActive(!isQuoteActive);

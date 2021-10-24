@@ -34,12 +34,12 @@ import Table from "./Pages/Table";
 import Tabs from "./Pages/Tabs";
 import Video from "./Pages/Video";
 
-export default function Components() {
+export default function Components({ data }) {
   return (
     <BrowserRouter basename="/">
       <div className="page-wraper">
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact render={() => <Home data={data} />} />
           <Route path="/homepage2" exact component={Home2} />
           <Route path="/homepage3" exact component={Home3} />
           <Route path="/homepage4" exact component={Home4} />

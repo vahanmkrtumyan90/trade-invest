@@ -13,17 +13,17 @@ import WhyChooseUs from "./../Elements/WhyChooseUs";
 // import Blogs from "./../Elements/Blogs2";
 // import Testimonials from "./../Elements/Testimonials";
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Header />
       <div className="page-content">
         <Slider />
-        <About />
+        <About data={data} />
         {/* <Specialization /> */}
         {/* <OurValue />
       <OurMission /> */}
-        <OurServices />
+        <OurServices data={data} />
 
         <Callus />
         <WhyChooseUs />

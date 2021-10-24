@@ -11,6 +11,7 @@ import "./i18n";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [data, setData] = useState();
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -18,6 +19,8 @@ const App = () => {
       // const en = (await client.getSingle("main")).data;
       const am = (await client.getSingle("main_hy")).data;
       const ru = (await client.getSingle("main_ru")).data;
+
+      setData(am);
 
       i18next.addResourceBundle("ru", "translation", {
         ...i18n.store.data.ru.translation,
@@ -36,7 +39,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Components />
+      <Components data={data} />
       <ScrolToTop />
       {loading && <Loader />}
     </div>
