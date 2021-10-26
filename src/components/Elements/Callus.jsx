@@ -13,7 +13,7 @@ export default function Callus() {
         className="section-full mobile-page-padding p-tb80 overlay-wraper bg-cover bg-center"
         style={{ backgroundImage: "url(" + bnr1.default + ")" }}
       >
-        <div className="overlay-main bg-primary opacity-07" />
+        <div className="overlay-main bg-primary opacity-07 bg-white" />
         <div className="container">
           <div className="section-content">
             <div className="call-us-section text-center">

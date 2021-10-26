@@ -3,7 +3,7 @@ import Header from "./../Common/Header";
 import Footer from "./../Common/Footer";
 import Slider from "./../Elements/Slider";
 // import Specialization from "./../Elements/Specialization";
-import About from "./../Elements/About4";
+import About from "./../Elements/About";
 // import OurValue from "./../Elements/OurValue";
 // import OurMission from "./../Elements/OurMission";
 import OurServices from "./../Elements/OurServices";
@@ -23,9 +23,10 @@ export default function Home({ data }) {
         {/* <Specialization /> */}
         {/* <OurValue />
       <OurMission /> */}
+        <Callus />
+
         <OurServices data={data} />
 
-        <Callus />
         <WhyChooseUs />
         {/* <OurProject /> */}
         {/* <Blogs /> */}
