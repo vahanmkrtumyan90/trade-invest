@@ -1,10 +1,11 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 i18n
   // detect user language
   // learn more: https://github.com/i18next/i18next-browser-languageDetector
-  // .use(LanguageDetector)
+  .use(LanguageDetector)
   // pass the i18n instance to react-i18next.
   .use(initReactI18next)
   // init i18next
@@ -76,8 +77,8 @@ i18n
           location: "Գտնվելու վայրը",
           our: "Մեր",
           service: "ծառայությունները",
-          why: "Ինչո՞ւ",
-          choose: "ընտրել մեզ",
+          why: "Մեր",
+          choose: "առավելությունները",
           contactus: "Հետադարձ կապ",
           useful: "Օգտակար հղումներ",
           cont: "Կոնտակտային",
@@ -116,8 +117,8 @@ i18n
           location: "Место нахождения",
           our: "Наши",
           service: "сервисы",
-          why: "Почему",
-          choose: "вибрают нас",
+          why: "Наши",
+          choose: "преимущества",
           contactus: "Обратная связь",
           useful: "Полезные ссылки",
           cont: "Контактная",

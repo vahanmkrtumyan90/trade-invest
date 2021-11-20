@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navigation from "../Common/Navigation";
 import { NavLink } from "react-router-dom";
-import logo from "./../../images/logo-light.png";
+import logo1 from "./../../images/tr.png";
 import { useTranslation } from "react-i18next";
 
 var bnr = require("./../../images/background/bg-5.png");
@@ -47,7 +47,7 @@ export default function Header() {
               <div className="logo-header">
                 <div className="logo-header-inner logo-header-one">
                   <NavLink to={"./"}>
-                    <img src={logo} alt="Shapen" />
+                    <img src={logo1} alt="Shapen" />
                   </NavLink>
                 </div>
               </div>

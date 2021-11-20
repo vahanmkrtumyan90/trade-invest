@@ -2,8 +2,6 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { NavHashLink } from "react-router-hash-link";
 
-const logo = require("./../../images/logo-dark.png").default;
-
 export default function Footer() {
   const { t } = useTranslation();
 
@@ -18,12 +16,6 @@ export default function Footer() {
               {/* ABOUT COMPANY */}
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="widget widget_about">
-                  {/*<h4 class="widget-title">About Company</h4>*/}
-                  <div className="logo-footer clearfix p-b15">
-                    <NavLink to={"./"}>
-                      <img src={logo} alt="" />
-                    </NavLink>
-                  </div>
                   <p className="max-w400">{t("about_text")}</p>
                 </div>
               </div>
