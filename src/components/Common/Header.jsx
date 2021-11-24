@@ -47,7 +47,7 @@ export default function Header() {
               <div className="logo-header">
                 <div className="logo-header-inner logo-header-one">
                   <NavLink to={"./"}>
-                    <img src={logo1} alt="Shapen" />
+                    <img src={logo1} alt="Trade Invest" />
                   </NavLink>
                 </div>
               </div>

@@ -5535,6 +5535,7 @@ ol.list-num-count.list-outline-none > li:before {
   -moz-transition: all 10s;
   -webkit-transition: all 10s;
   -o-transition: all 10s;
+  height: 200px;
 }
 
 .mt-img-effect.zoom-slow:hover img {
@@ -6642,6 +6643,10 @@ input[type="radio"]:checked + label:before {
   padding: 0;
   margin-left: 105px;
   border: none;
+}
+
+.mt-post-info {
+  height: 150px;
 }
 
 .recent-posts-entry .post-meta span {

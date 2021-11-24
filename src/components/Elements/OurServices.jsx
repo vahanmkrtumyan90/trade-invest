@@ -52,24 +52,26 @@ export default function OurServices() {
           </div>
           <div className="services-half-bottom">
             <div className="container">
-              <div className="row">
+              <div
+                style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}
+              >
                 {services?.map((item, index) => (
-                  <div className="col-md-4 col-sm-6" key={index}>
+                  <div className="col-md-12 col-sm-12" key={index}>
                     <div className="blog-post blog-grid date-style-2 bg-white shadow">
                       <div
                         className="mt-post-media mt-img-effect zoom-slow"
                         style={{ borderRadius: "16px 16px 0 0" }}
                       >
-                        <NavLink to={"/post-image"}>
-                          <img src={item.data.image.url} alt="" />
-                        </NavLink>
+                        {/* <NavLink to={"/post-image"}> */}
+                        <img src={item.data.image.url} alt="" />
+                        {/* </NavLink> */}
                       </div>
                       <div className="mt-post-info p-a30">
                         <div className="mt-post-title ">
                           <h4 className="post-title">
-                            <NavLink to={"/post-image"}>
-                              {item.data[`title_${ending}`]}
-                            </NavLink>
+                            {/* <NavLink to={"/post-image"}> */}
+                            {item.data[`title_${ending}`]}
+                            {/* </NavLink> */}
                           </h4>
                         </div>
 

@@ -39,9 +39,9 @@ export default function Navigation(props) {
           <li className="active">
             <NavLink to={"./"}>{t("home")}</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to={"/services"}>{t("services")}</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to={"/contactus"}>{t("contact")}</NavLink>
           </li>
