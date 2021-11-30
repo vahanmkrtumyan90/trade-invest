@@ -6,7 +6,7 @@ import Slider from "./../Elements/Slider";
 import About from "./../Elements/About";
 // import OurValue from "./../Elements/OurValue";
 // import OurMission from "./../Elements/OurMission";
-import OurServices from "./../Elements/OurServices";
+// import OurServices from "./../Elements/OurServices";
 import Callus from "./../Elements/Callus";
 import WhyChooseUs from "./../Elements/WhyChooseUs";
 // import OurProject from "./../Elements/OurProject";
@@ -25,7 +25,7 @@ export default function Home({ data }) {
       <OurMission /> */}
         <Callus />
 
-        <OurServices data={data} />
+        {/* <OurServices data={data} /> */}
 
         <WhyChooseUs />
         {/* <OurProject /> */}

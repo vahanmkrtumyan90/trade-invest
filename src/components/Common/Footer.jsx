@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { NavHashLink } from "react-router-hash-link";
 
@@ -39,9 +39,7 @@ export default function Footer() {
                       <NavHashLink to="/#about">{t("about")}</NavHashLink>
                     </li>
                     <li>
-                      <NavHashLink to={"/#services"}>
-                        {t("services")}
-                      </NavHashLink>
+                      <Link to={"/services"}>{t("services")}</Link>
                     </li>
                     <li>
                       <NavLink to={"/contactus"}>{t("contact")}</NavLink>

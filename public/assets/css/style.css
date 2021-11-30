@@ -9684,6 +9684,7 @@ HEADER (top part of page)
 
 .owl-carousel .owl-item img {
   transform-style: inherit;
+  height: 100%;
 }
 
 /*-------------------------------------

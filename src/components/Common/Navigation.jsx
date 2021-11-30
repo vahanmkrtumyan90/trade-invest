@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
+
 import { useTranslation } from "react-i18next";
 
 export default function Navigation(props) {
@@ -24,7 +25,19 @@ export default function Navigation(props) {
     loadScript("./assets/js/masonary.js");
   }, []);
 
-  console.log(i18n);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  console.log(pathname);
+
+  const paths = {
+    "/": "home",
+    "/services": "services",
+    "/contactus": "contactus",
+  };
 
   return (
     <>
@@ -36,14 +49,17 @@ export default function Navigation(props) {
         }
       >
         <ul className="nav navbar-nav">
-          <li className="active">
+          <li className={paths[pathname] === "home" && "active"}>
             <NavLink to={"./"}>{t("home")}</NavLink>
           </li>
           {/* <li>
             <NavLink to={"/services"}>{t("services")}</NavLink>
           </li> */}
-          <li>
+          <li className={paths[pathname] === "contactus" && "active"}>
             <NavLink to={"/contactus"}>{t("contact")}</NavLink>
+          </li>
+          <li className={paths[pathname] === "services" && "active"}>
+            <Link to={"/services"}>{t("services")}</Link>
           </li>
           <li>
             <NavLink to={""}>
