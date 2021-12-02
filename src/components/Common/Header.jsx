@@ -47,7 +47,20 @@ export default function Header() {
               <div className="logo-header">
                 <div className="logo-header-inner logo-header-one">
                   <NavLink to={"./"}>
-                    <img src={logo1} alt="Trade Invest" />
+                    <div style={{ display: "flex" }}>
+                      <img src={logo1} alt="Trade Invest" />
+                      <p
+                        style={{
+                          lineHeight: "22px",
+                          margin: "0 0 0 8px",
+                          fontSize: "22px",
+                          fontWeight: "bold",
+                          fontFamily: "Poppins",
+                        }}
+                      >
+                        Trade Invest
+                      </p>
+                    </div>
                   </NavLink>
                 </div>
               </div>

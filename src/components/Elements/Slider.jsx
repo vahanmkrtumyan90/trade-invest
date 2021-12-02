@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
 
 export default function Slider() {
   const { t, i18n } = useTranslation();
