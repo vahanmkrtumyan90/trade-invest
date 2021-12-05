@@ -52,15 +52,16 @@ export default function Navigation(props) {
           <li className={paths[pathname] === "home" && "active"}>
             <NavLink to={"./"}>{t("home")}</NavLink>
           </li>
+          <li className={paths[pathname] === "services" && "active"}>
+            <Link to={"/services"}>{t("services")}</Link>
+          </li>
           {/* <li>
             <NavLink to={"/services"}>{t("services")}</NavLink>
           </li> */}
           <li className={paths[pathname] === "contactus" && "active"}>
             <NavLink to={"/contactus"}>{t("contact")}</NavLink>
           </li>
-          <li className={paths[pathname] === "services" && "active"}>
-            <Link to={"/services"}>{t("services")}</Link>
-          </li>
+
           <li>
             <NavLink to={""}>
               {i18n?.language === "am" ? "Լեզու" : "Язык"}
