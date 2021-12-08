@@ -55,32 +55,31 @@ export default function OurServices() {
           </div>
           <div className="services-half-bottom">
             <div className="container">
-              <div
-                style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}
-              >
+              <div className="services-grid">
                 {services?.map((item, index) => (
-                  <div className="col-md-12 col-sm-12" key={index}>
-                    <div className="blog-post blog-grid date-style-2 bg-white shadow">
-                      <div
-                        className="mt-post-media mt-img-effect zoom-slow"
-                        style={{ borderRadius: "16px 16px 0 0" }}
-                      >
-                        {/* <NavLink to={"/post-image"}> */}
-                        <img src={item.data.image.url} alt="" />
-                        {/* </NavLink> */}
+                  <div
+                    key={index}
+                    className="blog-post blog-grid date-style-2 bg-white shadow service-item"
+                  >
+                    <div
+                      className="mt-post-media mt-img-effect zoom-slow"
+                      style={{ borderRadius: "16px 16px 0 0" }}
+                    >
+                      {/* <NavLink to={"/post-image"}> */}
+                      <img src={item.data.image.url} alt="" />
+                      {/* </NavLink> */}
+                    </div>
+                    <div className="mt-post-info p-a30">
+                      <div className="mt-post-title ">
+                        <h4 className="post-title">
+                          {/* <NavLink to={"/post-image"}> */}
+                          {item.data[`title_${ending}`]}
+                          {/* </NavLink> */}
+                        </h4>
                       </div>
-                      <div className="mt-post-info p-a30">
-                        <div className="mt-post-title ">
-                          <h4 className="post-title">
-                            {/* <NavLink to={"/post-image"}> */}
-                            {item.data[`title_${ending}`]}
-                            {/* </NavLink> */}
-                          </h4>
-                        </div>
 
-                        <div className="mt-post-text">
-                          <p>{item.data[`subtitle_${ending}`]}</p>
-                        </div>
+                      <div className="mt-post-text">
+                        <p>{item.data[`subtitle_${ending}`]}</p>
                       </div>
                     </div>
                   </div>

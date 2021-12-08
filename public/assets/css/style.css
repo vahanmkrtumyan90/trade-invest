@@ -14911,3 +14911,28 @@ Image Effect Two
     padding-bottom: 0px;
   }
 }
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item {
+  width: 345px;
+  margin: 16px;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+} */

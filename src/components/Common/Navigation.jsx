@@ -31,8 +31,6 @@ export default function Navigation(props) {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  console.log(pathname);
-
   const paths = {
     "/": "home",
     "/services": "services",
